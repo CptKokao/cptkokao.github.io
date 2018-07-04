@@ -1,0 +1,1 @@
+var search=document.querySelector(".button-search"),popup=document.querySelector(".modal-search");search.addEventListener("click",function(e){e.preventDefault(),popup.classList.toggle("visually-hidden")});
