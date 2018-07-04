@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Кэт энерджи </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.min.js" async></script>
+
+</head>
+
+<body>
+  <header class="main-nav">
+
+    <div class="main-nav__logo">
+      <a class="main-nav__logo-image" href="#">
+        <picture>
+          <source srcset="img/logo-desktop.svg" media="(min-width: 1300px)">
+          <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+          <img src="img/icon-logo-mobile.svg" alt="Логотип">
+        </picture>
+      </a>
+      <div class="main-nav__logo-link">
+        <img src="img/logo-mobile-header.svg" alt="Cat Energy" width="101" height="18">
+      </div>
+    </div>
+
+    <nav class="main-nav__menu main-nav__menu--opened main-nav__menu--color">
+      <button class="main-nav__btn" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-nav__popup">
+        <li class="main-nav__popup-item">
+          <a class="main-nav__popup-link main-nav__popup-link--active">Главная</a>
+        </li>
+        <li class="main-nav__popup-item">
+          <a class="main-nav__popup-link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="main-nav__popup-item">
+          <a class="main-nav__popup-link" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Главный заголовок страницы -->
+    <h1 class="visually-hidden">Питание для котов</h1>
+
+    <div class="introduction">
+      <div class="introduction__wrapper">
+        <h2 class="introduction__title">Функциональное питание для котов</h2>
+        <p class="introduction__descr">Занялся собой? Займись котом!</p>
+        <div class="introduction__product">
+          <picture>
+            <source type="image/webp" media="(min-width: 1300px)" srcset="img/webp/index-can-desktop@1x.webp 1x, img/webp/index-can-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/index-can-tablet@1x.webp 1x, img/webp/index-can-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/webp/index-can-mobile@1x.webp 1x, img/webp/index-can-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x" >
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x" >
+            <img src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Cat Energy с курицей">
+          </picture>
+        </div>
+        <div class="introduction__btn">
+          <a class="introduction__link" href="form.html">Подобрать программу</a>
+        </div>
+      </div>
+
+    </div>
+
+    <section class="programs">
+      <h2 class="visually-hidden">Программы питания</h2>
+      <div class="programs__list">
+        <ul class="programs__item">
+          <li class="programs__name">
+            <p class="programs__slim">Похудение</p>
+          </li>
+        </ul>
+
+        <p class="programs__descr programs__descr--width">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+        <p class="programs__link">
+          <a href="catalog.html#slim" class="programs__link-catalog">Каталог slim</a>
+        </p>
+
+      </div>
+
+      <div class="programs__list">
+        <ul class="programs__item">
+          <li class="programs__name">
+            <p class="programs__pro">Набор массы</p>
+          </li>
+        </ul>
+        <p class="programs__descr">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+        <p class="programs__link">
+          <a href="catalog.html#pro" class="programs__link-catalog">Каталог pro</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="features">
+      <h2 class="features__title">Как это работает</h2>
+      <ul class="features__list features__list--leaf">
+        <li class="features__image">
+          <picture>
+            <source type="image/webp" srcset="img/webp/advantage-leaf@1x.webp 1x, img/webp/advantage-leaf@2x.webp 2x">
+            <img src="img/advantage-leaf@1x.png" srcset="img/advantage-leaf@2x.png 2x" alt="Питательные вещества">
+          </picture>
+        </li>
+        <li class="features__descr">
+          <p class="features__text">Функциональное питание содержит только полезные питательные вещества.</p>
+        </li>
+      </ul>
+      <ul class="features__list features__list--powder">
+        <li class="features__image">
+          <picture>
+            <source type="image/webp" srcset="img/webp/advantage-powder@1x.webp 1x, img/webp/advantage-powder@2x.webp 2x">
+            <img src="img/advantage-powder@1x.png" srcset="img/advantage-powder@2x.png 2x" alt="Порошок">
+          </picture>
+        </li>
+        <li class="features__descr">
+          <p class="features__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+        </li>
+      </ul>
+      <ul class="features__list features__list--dining">
+        <li class="features__image">
+          <picture>
+            <source type="image/webp" srcset="img/webp/advantage-dining@1x.webp 1x, img/webp/advantage-dining@2x.webp 2x">
+            <img src="img/advantage-dining@1x.png" srcset="img/advantage-dining@2x.png 2x" alt="Фунцкциональное питание">
+          </picture>
+        </li>
+        <li class="features__descr">
+          <p class="features__text">Замените один-два приема обычной еды на наше фунцкциональное питание.</p>
+        </li>
+      </ul>
+      <ul class="features__list features__list--clock">
+        <li class=" features__image">
+          <picture>
+            <source type="image/webp" srcset="img/webp/advantage-clock@1x.webp 1x, img/webp/advantage-clock@2x.webp 2x">
+            <img src="img/advantage-clock@1x.png" srcset="img/advantage-clock@2x.png 2x" alt="Результаты через месяц">
+          </picture>
+        </li>
+        <li class="features__descr">
+          <p class="features__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="result">
+      <div class="result-wrapper">
+        <h2 class="result__title">Живой пример</h2>
+        <p class="result__descr">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <div class="result__list">
+          <div class="result__item">
+            <p class="result__value">5 кг</p>
+            <p class="result__text">Снижение веса</p>
+          </div>
+          <div class="result__item">
+            <p class="result__value">60 дней</p>
+            <p class="result__text ">Затрачено времени</p>
+          </div>
+          <p class="result__cost">Затраты на питание: <span class="result__cost-value">15 000 руб.</span></p>
+        </div>
+      </div>
+
+      <div class="result-wrapper1">
+        <div class="result__image">
+          <div class="result__image-before">
+            <div class="result__picture-before">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/webp/before-desktop@1x.webp 1x, img/webp/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/before-tablet@1x.webp 1x, img/webp/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/webp/before-mobile@1x.webp 1x, img/webp/before-mobile@2x.webp 2x">
+
+                <source srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x" media="(min-width: 1300px)">
+                <source srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x" media="(min-width: 768px)">
+                <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Толстый кот">
+              </picture>
+            </div>
+          </div>
+          <div class="result__image-after">
+            <div class="result__picture-after">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/webp/after-desktop@1x.webp 1x, img/webp/after-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/after-tablet@1x.webp 1x, img/webp/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/webp/after-mobile@1x.webp 1x, img/webp/after-mobile@2x.webp 2x">
+
+                <source srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x" media="(min-width: 1300px)">
+                <source srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x" media="(min-width: 768px)">
+                <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Толстый кот">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <ul class="result__option">
+          <li class="result__before">
+            <p class="result__before-text">Было</p>
+          </li>
+          <li class="result__switch">
+          </li>
+          <li class="result__after">
+            <p class="result__after-text">Стало</p>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="contacts_list">
+        <p class="contacts__dealers">Приглашаем <br>к сотрудничеству дилеров!</p>
+        <p class="contacts_address">ул. Большая Конюшенная, д. 19/8 <span class="contacts_city">Санкт-Петербург</span></p>
+      </div>
+      <div class="contacts_map">
+        <iframe class="contacts_map-size" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123657!2d30.320894615623903!3d59.93879686904846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1516182043902" style="border:0" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer_title">
+      <img class="footer_logo" src="img/logo-footer.svg" alt="Cat Energy" width="128" height="24">
+    </div>
+
+    <div class="social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы в Вконтакте</span>
+            <svg class="social__link-vk" width="30.004" height="15.761" xmlns="http://www.w3.org/2000/svg" viewBox="3.007 11.628 30.004 15.761">
+              <path d="M26.945 27.388c-.386 0-1.17-.082-2.075-.632-.642-.385-1.223-.968-1.784-1.532-.438-.44-1.171-1.177-1.447-1.177-.268.075-.481.921-.476 1.569.004.113-.001.774-.468 1.213-.425.4-1.088.485-1.216.498l-1.926.007c-.967 0-4.358-.218-7.429-3.021-3.674-3.358-6.835-9.798-6.968-10.07-.197-.462-.248-1.066.152-1.482.392-.413 1.081-.472 1.359-.479l4.083-.024.115.008c.091.014.567.095.957.349.388.247.59.651.626.73.01.021.649 1.432 1.475 2.684 1.312 1.99 1.896 2.455 2.103 2.562.188-.417.277-1.7.187-2.871.001-.493-.101-1.098-.252-1.278-.112-.134-.426-.253-.778-.294l-.722-.691c-.096-.658.635-1.226 1.149-1.446.737-.316 1.792-.382 3.147-.382l.71.005c1.235.012 1.622.081 2.149.191 1.702.361 1.64 1.729 1.567 3.312-.021.464-.046 1.001-.046 1.621 0 .151-.005.312-.011.479-.012.38-.032 1.038.093 1.304.219-.145.852-.665 2.072-2.483.783-1.165 1.4-2.539 1.517-2.803l.001-.001c.182-.43.608-.941 1.613-.946l4.274-.024c.012-.003.172-.016.377-.016.98 0 1.597.287 1.832.854.269.65.169 1.657-2.354 4.605-.37.432-.697.804-.982 1.127-.598.678-1.216 1.379-1.237 1.595.053.169.662.665 1.252 1.145 1.53 1.247 2.528 2.264 3.033 3.073.522.759.429 1.33.258 1.677-.424.864-1.638.973-1.877.985l-3.79.047c-.055.006-.145.012-.263.012zm-5.307-4.84c.899 0 1.682.786 2.511 1.618.497.5 1.011 1.016 1.496 1.307.727.44 1.316.421 1.398.412l.103-.009 3.805-.047c.171-.012.411-.073.536-.136-.018-.039-.048-.094-.098-.167-.449-.718-1.388-1.659-2.686-2.718-1.184-.963-1.801-1.465-1.865-2.244-.066-.805.493-1.439 1.607-2.703.28-.318.604-.685.967-1.109 1.559-1.821 1.957-2.64 2.058-2.956-.17-.029-.648-.021-.678-.018l-4.361.028c-.191.001-.249.035-.249.036-.176.414-.812 1.812-1.644 3.05-1.895 2.82-2.785 3.2-3.407 3.201-.204 0-.396-.05-.569-.148-1.003-.569-.963-1.834-.934-2.757.005-.149.01-.295.01-.431 0-.646.025-1.207.048-1.689.076-1.68.016-1.692-.379-1.776-.409-.086-.705-.147-1.856-.159l-.693-.005c-.624 0-1.343.014-1.906.098.092.074.18.157.259.251.588.704.604 1.951.601 2.194.13 1.646.061 3.796-1.018 4.313-.191.092-.392.137-.597.137-.926 0-1.854-.885-3.425-3.267-.895-1.354-1.56-2.824-1.587-2.887-.011-.021-.054-.077-.075-.094-.083-.054-.233-.097-.32-.116l-4.001.024c-.021.001-.045.002-.07.005.591 1.189 3.426 6.592 6.519 9.419 2.74 2.502 5.826 2.629 6.417 2.629l1.851-.003c.046-.01.218-.062.269-.1-.019.018-.01-.053-.01-.097-.003-.265.012-2.595 1.578-3.034.126-.034.259-.052.395-.052z"/>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://www.instagram.com/htmlacademy">
+            <span class="visually-hidden">Мы в Instagram</span>
+            <svg class="social__link-insta" width="23" height="23" xmlns="http://www.w3.org/2000/svg" viewBox="-3 -3 23 23">
+              <path d="M14.002-1.501C16.482-1.501 18.5.519 18.5 3v11c0 2.481-2.018 4.5-4.498 4.5H3.01c-2.48 0-4.498-2.019-4.498-4.5V3C-1.488.519.53-1.5 3.01-1.5h10.992m0-1.5H3.01C-.29-3-2.987-.301-2.987 3v11.001C-2.987 17.299-.29 20 3.01 20h10.995C17.301 20 20 17.299 20 13.999V3c0-3.301-2.699-6-5.998-6z"/>
+              <path d="M8.506 4.078c2.44 0 4.429 1.985 4.429 4.428 0 2.44-1.989 4.43-4.429 4.43-2.443 0-4.428-1.989-4.428-4.43 0-2.443 1.985-4.428 4.428-4.428m0-1.5c-3.273 0-5.928 2.654-5.928 5.928s2.654 5.927 5.928 5.927 5.926-2.653 5.926-5.927-2.652-5.928-5.926-5.928z"/>
+              <circle cx="14.646" cy="2.379" r="1.341"/>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://www.facebook.com/htmlacademy">
+            <span class="visually-hidden">Мы в Facebook</span>
+            <svg class="social__link-fb" width="13.518" height="27.75" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 19">
+              <path d="M7.1 19H2v-8.8H0V5.8h1.9c-.1-2 .2-3.4 1.1-4.4C3.8.5 5 .1 6.5 0H10v4.2H7.2c-.1.2-.2.8-.2 1.6h3v4.4H7.1V19zm-4-1h2.8V9.1h2.9V6.8H5.9v-.5c0-1.4 0-2.6.7-3.1l.1-.1h2.1V1H6.5c-1.2.1-2 .4-2.6 1-.8.8-1 2.3-.8 4.2l.1.6H1.1v2.3h2V18z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer__copyright">
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copyright-text">HTML Academy</a>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__copyright-link">
+        <span class="visually-hidden">Логотип HTML Academy</span>
+        <svg class="footer__copyright-image" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" fill="#666">
+          <path d="M13.62.017L13.472 0 0 1.412v24.661l13.472 8.017 13.43-7.99.042-.026V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.547-1.212 11.547 1.212v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.013 1.415 5.904 3.513-.86.507-5.031-2.992-.013 1.415 3.827 2.275-.782.523-3.032-1.787-.013 1.413 1.852 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.015 1.044-7.941-4.728-.015 1.416 7.979 4.796.017 1.076-7.972-4.741-.013 1.415 8.021 4.821.045.026 8.143-4.872v-1.268l-.011-.148v-3.761l3.415-2.036v10.02L13.472 31.85 1.925 24.979v-9.852z"/>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/popup.min.js"></script>
+</body>
+
+</html>
