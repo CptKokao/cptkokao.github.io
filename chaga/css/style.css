@@ -149,7 +149,7 @@ input[type="radio"].visually-hidden {
 
 .product {
   background-image: url(../img/bg2.jpg);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: contain;
   background-position: center top; }
 
@@ -157,7 +157,8 @@ input[type="radio"].visually-hidden {
   padding: 20px; }
   .product__item:hover {
     border-radius: 25px;
-    background-color: #f3ebdd; }
+    background-color: #f3ebdd;
+    opacity: 0.8; }
 
 .product-text {
   font-size: 18px;
