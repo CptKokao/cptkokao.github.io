@@ -87,7 +87,7 @@ input[type="radio"].visually-hidden {
   src: url("../fonts/Tahoma.woff2") format("woff2"); }
 
 .header {
-  background: url("../img/bg.png") no-repeat center top;
+  background: url("../img/layer0.jpg") no-repeat center top;
   background-size: 100% 100%;
   padding: 20px 0; }
 
@@ -148,7 +148,7 @@ input[type="radio"].visually-hidden {
       opacity: 0.5; } }
 
 .product {
-  background-image: url(../img/bg2.jpg);
+  background-image: url("../img/bg2.jpg");
   background-repeat: repeat;
   background-size: contain;
   background-position: center top; }
@@ -157,8 +157,7 @@ input[type="radio"].visually-hidden {
   padding: 20px; }
   .product__item:hover {
     border-radius: 25px;
-    background-color: #f3ebdd;
-    opacity: 0.8; }
+    background-color: rgba(243, 235, 221, 0.6); }
 
 .product-text {
   font-size: 18px;
