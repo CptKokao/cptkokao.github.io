@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pixel Plus</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+  <!-- popup -->
+  <div class="white-popup mfp-hide" id="form-popup">
+    <button title="Закрыть" type="button" class="mfp-close">×</button>
+    <!-- form -->
+    <form class="popup" method="GET">
+      <h2 class="popup__title">Обратная связь</h2>
+      <label for="name">Ваше имя <sup>&#9913;</sup></label>
+      <input type="text" name="name" id="name" placeholder="Поле обязательное для заполнения" required="" autocomplete="on">
+
+      <label for="tel">Телефон <sup>&#9913;</sup></label>
+      <input type="tel" name="tel" id="tel" placeholder="Поле обязательное для заполнения" required="" autocomplete="on">
+
+      <label for="email">Email <sup>&#9913;</sup></label>
+      <input type="email" name="email" id="email" placeholder="Поле обязательное для заполнения" required="" autocomplete="on">
+
+      <label for="message">Сообщение</label>
+      <textarea name="message" id="message" placeholder="" required=""></textarea>
+
+      <button title="Отправить" type="submit">Отправить</button>
+    </form>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <h1 class="visually-hidden">Название компании</h1>
+        <div class="header__img">
+          <img src="img/logo.png" width="273" height="100" alt="логотип">
+        </div>
+        <div class="header__feedback">
+          <a class="header__feedback-link" href="tel:+7(499)7777777">+7(499) 777-77-77</a>
+          <a class="header__feedback-link" href="tel:+7(499)7777777">+7(499) 777-77-77</a>
+          <a class="header__feedback-text" href="#form-popup">Обратная связь</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- nav -->
+    <nav class="nav">
+      <div class="container">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="">Главная</a></li>
+          <li class="nav__item"><a href="#" class="">Каталог</a></li>
+          <li class="nav__item"><a href="#" class="">Доставка и оплата</a></li>
+          <li class="nav__item"><a href="#" class="">Прайс-лист</a></li>
+          <li class="nav__item"><a href="#" class="">Контакты</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+  <main>
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/slaid1.png" width="1248" height="462" alt="слайдер"></div>
+        <div class="swiper-slide"><img src="img/slaid1.png" alt="слайдер"></div>
+        <div class="swiper-slide"><img src="img/slaid1.png" alt="слайдер"></div>
+        <div class="swiper-slide"><img src="img/slaid1.png" alt="слайдер"></div>
+      </div>
+      <!-- Add Arrows -->
+      <div class="swiper-button swiper-button-next"></div>
+      <div class="swiper-button swiper-button-prev"></div>
+    </div>
+
+    <div class="container">
+
+      <!-- breadcrumb -->
+      <ul class="breadcrumb">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Бытовая техника</a></li>
+      </ul>
+
+      <div class="wrapper">
+        <div class="container-left">
+          <!-- menu -->
+          <ul class="menu">
+            <li><a href="#">Автомобили</a></li>
+            <li class="menu__active"><a href="#">Бытовая техника</a>
+              <!-- submenu -->
+              <ul class="submenu">
+                <li class="submenu__active"><a href="#">Микроволновки</a></li>
+                <li><a href="#">Холодильники</a></li>
+                <li><a href="#">Посудомоучные машины</a></li>
+                <li><a href="#">Чайники</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Мобильная техника</a></li>
+            <li><a href="#">Компьютеры</a></li>
+            <li><a href="#">Одежда</a></li>
+            <li><a href="#">Недвижимость</a></li>
+          </ul>
+        </div>
+
+        <div class="container-right">
+
+          <!-- product -->
+          <ul class="product">
+            <li class="product__item">
+              <div class="product__item-img">
+                <img src="img/nophoto.jpg" width="210" height="210" alt="Чайник">
+              </div>
+              <p class="product__item-desc">Самый клевый чайник, который надо купить!</p>
+              <p class="product__item-price">1 900 р.</p>
+            </li>
+            <li class="product__item">
+              <div class="product__item-img">
+                <img src="img/nophoto.jpg" width="210" height="210" alt="Чайник">
+              </div>
+              <p class="product__item-desc">Самый клевый чайник, который надо купить!</p>
+              <p class="product__item-price">1 900 р.</p>
+            </li>
+            <li class="product__item">
+              <div class="product__item-img">
+                <img src="img/nophoto.jpg" width="210" height="210" alt="Чайник">
+              </div>
+              <p class="product__item-desc">Самый клевый чайник, который надо купить!</p>
+              <p class="product__item-price">1 900 р.</p>
+            </li>
+            <li class="product__item">
+              <div class="product__item-img">
+                <img src="img/nophoto.jpg" width="210" height="210" alt="Чайник">
+              </div>
+              <p class="product__item-desc">Самый клевый чайник, который надо купить!</p>
+              <p class="product__item-price">1 900 р.</p>
+            </li>
+            <li class="product__item">
+              <div class="product__item-img">
+                <img src="img/nophoto.jpg" width="210" height="210" alt="Чайник">
+              </div>
+              <p class="product__item-desc">Самый клевый чайник, который надо купить!</p>
+              <p class="product__item-price">1900</p>
+            </li>
+          </ul>
+
+          <!-- pagination -->
+          <ul class="pagination">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li class="pagination__ative"><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+          </ul>
+
+          <!-- about -->
+          <div class="about">
+            <p>Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке более чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент наш коллектив состоит из более чем 30 сотрудников работающих в двух офисах в Москве и Зеленограде.характерные для этого жанра мотивы: неразделённой любви, ухода молодости, угасания души. </p>
+            <p>Одним из основных направлений работ нашей компании является поисковое продвижение сайтов, на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым запросам. При этом в работе основной акцент мы делаем на качестве работ, а так же применяем собственные уникальные разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек под руководством ведущего специалиста, преимущественно работающих в нашем московском офисе.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer class="contact">
+    <div class="container">
+      <div class="contact__wrapper">
+
+        <div class="contact__company">
+          <p>© 2012–2013 ЗАО «Компания»</p>
+          <a href="mailto:info@name.ru">info@name.ru</a>
+        </div>
+
+        <ul class="nav-footer">
+          <li><a href="#" class="">Главная</a></li>
+          <li><a href="#" class="">Каталог</a></li>
+          <li><a href="#" class="">Доставка и оплата</a></li>
+          <li><a href="#" class="">Прайс-лист</a></li>
+          <li><a href="#" class="">Контакты</a></li>
+        </ul>
+
+        <p class="contact__dev">Разработка сайта — компания <a href="https://pixelplus.ru/" target="_blank">«Пиксель Плюс»</a></p>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
