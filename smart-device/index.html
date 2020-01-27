@@ -67,17 +67,17 @@
       <div class="modal__close"></div>
 
       <!-- form -->
-      <form class="form modal__form" method="GET">
+      <form class="form modal__form form--nomargin" method="GET">
         <label class="visually-hidden" for="modal-name">Имя</label>
         <input type="text" name="modal-name" id="modal-name" placeholder="Имя" required="" autocomplete="on">
 
         <label class="visually-hidden" for="modal-tel">Телефон</label>
-        <input type="tel" name="modal-tel" id="modal-tel" placeholder="Телефон" required="" autocomplete="on">
+        <input type="tel" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" name="modal-tel" id="modal-tel" placeholder="Телефон" required="" autocomplete="on">
 
         <label class="visually-hidden" for="modal-message">Сообщение</label>
         <textarea name="message" id="modal-message" placeholder="Ваш вопрос" required=""></textarea>
 
-        <button type="submit">Задать вопрос</button>
+        <button type="submit">Отправить</button>
         <div class="form__group">
           <input id="modal" type="checkbox" checked="">
           <label for="modal">Я согласен на обработку персональных данных</label>
@@ -105,10 +105,10 @@
           <li class="header__item">
             <a href="mailto:info@sd.ru">
               <img class="header__email-img" src="img/icon-email.svg" width="19" height="14" alt="Потча">
-              <span class="header__item-text">info@sd.ru</span>
+              <span class="header__item-text header__item-text--padding">info@sd.ru</span>
             </a>
           </li>
-          <li class="header__item header__item--no_padding">
+          <li class="header__item header__item--nopadding">
             <a href="tel:+7(495)0005252">
               <img class="header__phone-img" src="img/icon-phone.svg" width="18" height="18" alt="Телефон">
               <span class="header__item-text">+7 (495) 000 52 52</span>
@@ -123,8 +123,8 @@
       <!-- intro -->
       <div class="intro">
         <div class="intro__img">
-           <!-- Кадрирование для оптимизации Lighthouse -->
-          <!-- 1х: 705px; 2x: 1410px -->
+          <!-- desktop 1х: 705px; 2x: 1410px -->
+          <!-- mobile: 1х: 294px; 2x: 588px -->
           <picture>
             <source media="(max-width: 767px)" srcset="img/printed-board-mobile@2x.png 2x, img/printed-board-mobile.png 1x">
             <source media="(max-width: 767px)" type="image/webp" srcset="img/printed-board-mobile@2x.webp 2x, img/printed-board-mobile.webp 1x">
@@ -188,10 +188,10 @@
           <a href="#" class="about__btn">подробнее</a>
           <div class="about__img">
             <!-- lazyload -->
-            <!-- 1х: 220px; 2x: 440px -->
+            <!-- 1х: 244px; 2x: 487px -->
             <picture>
-              <source type="image/webp" data-srcset="img/2005@2x.webp 2x, img/2005.webp 1x">
-              <img class="lazy" data-src="img/2005.png" data-srcset="img/2005@2x.png 2x" alt="Год">
+              <source type="image/webp" srcset="img/2005@2x.webp 2x, img/2005.webp 1x">
+              <img class="lazy" src="img/2005.png" srcset="img/2005@2x.png 2x" alt="Год">
             </picture>
           </div>
         </section>
@@ -206,38 +206,40 @@
 
           <a class="product__link" href="#">
             <!-- lazyload -->
-            <!-- 1х: 416; 2x: 832 -->
+            <!-- mobile: 1х: 290px; 2x: 580px -->
+            <!-- tablet: 1х: 728px; 2x: 1456px -->
+            <!-- desktop: 1х: 378px; 2x: 756px -->
             <picture>
-              <source media="(max-width: 767px)" data-srcset="img/production-mobile@2x.jpg 2x, img/production-mobile.jpg 1x">
-              <source media="(max-width: 767px)" type="image/webp" data-srcset="img/production-mobile@2x.webp 2x, img/production-mobile.webp 1x">
-              <source media="(max-width: 1023px)" data-srcset="img/production-tablet@2x.jpg 2x, img/production-tablet.jpg 1x">
-              <source media="(max-width: 1023px)" type="image/webp" data-srcset="img/production-tablet@2x.webp 2x, img/production-tablet.webp 1x">
-              <source type="image/webp" data-srcset="img/production@2x.webp 2x, img/production.webp 1x">
-              <img class="lazy" data-src="img/production.jpg" data-srcset="img/production@2x.jpg 2x" alt="Производство">
+              <source media="(max-width: 767px)" srcset="img/production-mobile@2x.jpg 2x, img/production-mobile.jpg 1x">
+              <source media="(max-width: 767px)" type="image/webp" srcset="img/production-mobile@2x.webp 2x, img/production-mobile.webp 1x">
+              <source media="(max-width: 1023px)" srcset="img/production-tablet@2x.jpg 2x, img/production-tablet.jpg 1x">
+              <source media="(max-width: 1023px)" type="image/webp" srcset="img/production-tablet@2x.webp 2x, img/production-tablet.webp 1x">
+              <source type="image/webp" srcset="img/production@2x.webp 2x, img/production.webp 1x">
+              <img class="lazy" src="img/production.jpg" srcset="img/production@2x.jpg 2x" alt="Производство">
             </picture>
             <p class="product__item-title">Производство печатных плат</p>
           </a>
 
           <a class="product__link" href="#">
             <picture>
-              <source media="(max-width: 767px)" data-srcset="img/mounting-mobile@2x.jpg 2x, img/mounting-mobile.jpg 1x">
-              <source media="(max-width: 767px)" type="image/webp" data-srcset="img/mounting-mobile@2x.webp 2x, img/mounting-mobile.webp 1x">
-              <source media="(max-width: 1023px)" data-srcset="img/mounting-tablet@2x.jpg 2x, img/mounting-tablet.jpg 1x">
-              <source media="(max-width: 1023px)" type="image/webp" data-srcset="img/mounting-tablet@2x.webp 2x, img/mounting-tablet.webp 1x">
-              <source type="image/webp" data-srcset="img/mounting@2x.webp 2x, img/mounting.webp 1x">
-              <img class="lazy" data-src="img/mounting.jpg" data-srcset="img/mounting@2x.jpg 2x" alt="Монтаж">
+              <source media="(max-width: 767px)" srcset="img/mounting-mobile@2x.jpg 2x, img/mounting-mobile.jpg 1x">
+              <source media="(max-width: 767px)" type="image/webp" srcset="img/mounting-mobile@2x.webp 2x, img/mounting-mobile.webp 1x">
+              <source media="(max-width: 1023px)" srcset="img/mounting-tablet@2x.jpg 2x, img/mounting-tablet.jpg 1x">
+              <source media="(max-width: 1023px)" type="image/webp" srcset="img/mounting-tablet@2x.webp 2x, img/mounting-tablet.webp 1x">
+              <source type="image/webp" srcset="img/mounting@2x.webp 2x, img/mounting.webp 1x">
+              <img class="lazy" src="img/mounting.jpg" srcset="img/mounting@2x.jpg 2x" alt="Монтаж">
             </picture>
             <p class="product__item-title">Монтаж печатных плат</p>
           </a>
 
           <a class="product__link" href="#">
             <picture>
-              <source media="(max-width: 767px)" data-srcset="img/extra-mobile@2x.jpg 2x, img/extra-mobile.jpg 1x">
-              <source media="(max-width: 767px)" type="image/webp" data-srcset="img/extra-mobile@2x.webp 2x, img/extra-mobile.webp 1x">
-              <source media="(max-width: 1023px)" data-srcset="img/extra-tablet@2x.jpg 2x, img/extra-tablet.jpg 1x">
-              <source media="(max-width: 1023px)" type="image/webp" data-srcset="img/extra-tablet@2x.webp 2x, img/extra-tablet.webp 1x">
-              <source type="image/webp" data-srcset="img/extra@2x.webp 2x, img/extra.webp 1x">
-              <img class="lazy" data-src="img/extra.jpg" data-srcset="img/extra@2x.jpg 2x" alt="Комплектующие">
+              <source media="(max-width: 767px)" srcset="img/extra-mobile@2x.jpg 2x, img/extra-mobile.jpg 1x">
+              <source media="(max-width: 767px)" type="image/webp" srcset="img/extra-mobile@2x.webp 2x, img/extra-mobile.webp 1x">
+              <source media="(max-width: 1023px)" srcset="img/extra-tablet@2x.jpg 2x, img/extra-tablet.jpg 1x">
+              <source media="(max-width: 1023px)" type="image/webp" srcset="img/extra-tablet@2x.webp 2x, img/extra-tablet.webp 1x">
+              <source type="image/webp" srcset="img/extra@2x.webp 2x, img/extra.webp 1x">
+              <img class="lazy" src="img/extra.jpg" srcset="img/extra@2x.jpg 2x" alt="Комплектующие">
             </picture>
             <p class="product__item-title">Комплектующие для светотехники</p>
           </a>
@@ -252,8 +254,8 @@
           <!-- lazyload -->
           <!-- 1х: 511px; 2x: 1022px -->
           <picture>
-            <source type="image/webp" data-srcset="img/airplane@2x.webp 2x, img/airplane.webp 1x">
-            <img class="lazy" data-src="img/airplane.png" data-srcset="img/airplane@2x.png 2x" alt="Самолет">
+            <source type="image/webp" srcset="img/airplane@2x.webp 2x, img/airplane.webp 1x">
+            <img class="lazy" src="img/airplane.png" srcset="img/airplane@2x.png 2x" alt="Самолет">
           </picture>
         </div>
         <div class="feedback__form-wrapper">
@@ -266,7 +268,7 @@
             <input type="text" name="name" id="feedback-name" placeholder="Имя" autocomplete="on" required="">
 
             <label class="visually-hidden" for="feedback-tel">Телефон</label>
-            <input type="tel" name="tel" id="feedback-tel" placeholder="Телефон" autocomplete="on" required="">
+            <input type="tel" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" name="tel" id="feedback-tel" placeholder="Телефон" autocomplete="on" required="">
 
             <label class="visually-hidden" for="feedback-message">Сообщение</label>
             <textarea name="message" id="feedback-message" placeholder="Ваш вопрос" required=""></textarea>
@@ -359,16 +361,16 @@
         <button class="footer__btn footer__btn--position footer__btn--plus" id="btn-contact" aria-label="Открыть раздел наш офис" type="button"></button>
         <ul class="footer__contact-list">
           <li class="footer__contact-item">
-            <p class="footer__contact-text">г. Мытищи, Олимпийский проспект, д.10</p>
+            <a class="footer__contact-link">г. Мытищи, Олимпийский проспект, д.10</a>
           </li>
           <li class="footer__contact-item">
-            <p class="footer__contact-text">+7 (495) 589-40-50</p>
+            <a class="footer__contact-link" href="tel:+7(495)5894050">+7 (495) 589-40-50</a>
           </li>
           <li class="footer__contact-item">
-            <p class="footer__contact-text">+7 (925) 003-87-67</p>
+            <a class="footer__contact-link" href="tel:+7(925)0038767">+7 (925) 003-87-67</a>
           </li>
           <li class="footer__contact-item">
-            <p class="footer__contact-text">+7 (926) 926-080-79</p>
+            <a class="footer__contact-link" href="tel:+7(926)92608079">+7 (926) 926-080-79</a>
           </li>
         </ul>
       </div>
@@ -384,7 +386,7 @@
           <li class="extra-item extra-item--hidden">
             <p class="extra-text ">1999-2018 SD Service Devices</p>
           </li>
-          <li class="extra-item">
+          <li class="extra-item extra-item--margin">
             <p class="extra-text">Условия конфиденциальности</p>
           </li>
           <li class="extra-item">

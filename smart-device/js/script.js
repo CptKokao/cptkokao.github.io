@@ -35,6 +35,7 @@ var body = document.querySelector('body');
 var overlay = document.querySelector('.overlay');
 var close = document.querySelector('.modal__close');
 var modalInput = document.querySelector('.modal [type="text"]');
+var esc = 27;
 
 /* открытие модального окна */
 callBtn.addEventListener('click', function (e) {
@@ -54,7 +55,6 @@ callBtn.addEventListener('click', function (e) {
 
 /* закрытие модального окна */
 var closeModal = function closeModal(e) {
-  e.preventDefault();
   modal.classList.add('visually-hidden');
   overlay.classList.add('visually-hidden');
   body.style.overflow = 'auto';
@@ -63,7 +63,8 @@ var closeModal = function closeModal(e) {
 close.addEventListener('click', closeModal);
 overlay.addEventListener('click', closeModal);
 window.addEventListener('keydown', function (e) {
-  if (e.code === 'Escape') {
+  console.log(e)
+  if (e.code === 'Escape' || e.keyCode === esc) {
     closeModal();
   }
 });
