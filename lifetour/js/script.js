@@ -82,7 +82,7 @@ var swiper = new Swiper('.gallery__swiper-container', {
   },
 });
 
-let phone = document.querySelector('#phone');
+var phone = document.querySelector('#phone');
 
 /*  Маска формы телефона */
 var maskOptions = {
