@@ -72,10 +72,6 @@ var swiper = new Swiper('.gallery__swiper-container', {
   slidesPerView: 'auto',
   spaceBetween: 5,
   loop: true,
-  // Disable preloading of all images
-  preloadImages: false,
-  // Enable lazy loading
-  lazy: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
