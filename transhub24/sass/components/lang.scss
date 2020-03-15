@@ -1,0 +1,22 @@
+// Переключение языка
+.lang {
+  width: 60px;
+
+  span {
+    color: #88819d;
+  }
+}
+
+.lang__link {
+  font-size: 14px;
+  line-height: 17px;
+  color: #88819d;
+
+  &:hover {
+    @include link-opacity;
+  }
+}
+
+.lang__link--active {
+  color: #20afff;
+}

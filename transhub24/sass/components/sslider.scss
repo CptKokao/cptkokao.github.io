@@ -1,0 +1,48 @@
+.step {
+  padding: 45px 0;
+  background: #0099ef;
+
+  h2 {
+    width: 754px;
+    margin-left: 360px;
+    font-weight: 750;
+    font-size: 46px;
+    line-height: 60px;
+    color: #FFFFFF;
+  }
+}
+
+.sslider {
+  display: flex;
+  margin-left: 360px;
+  padding: 30px 0;
+}
+
+.sslider__item {
+  width: 346px;
+  height: 346px;
+  margin: 50px 10px;
+  padding: 45px;
+  padding-right: 28px;
+
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 26, 46, 0.3);
+
+  svg {
+    fill: #004460;
+  }
+
+  h3 {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 51px;
+    letter-spacing: 0.02em;
+  }
+
+  p {
+    line-height: 24px;
+  }
+}
+

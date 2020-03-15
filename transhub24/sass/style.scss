@@ -1,0 +1,21 @@
+// Импорт дополнительных стилей
+@import "plugin/normalize.scss";
+@import "plugin/slick.scss";
+
+// Импорт глобальных файлов
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/global.scss";
+@import "global/mixins.scss";
+
+// Импорт компонентов
+@import "components/header.scss";
+@import "components/enter.scss";
+@import "components/lang.scss";
+@import "components/logo.scss";
+@import "components/nav.scss";
+@import "components/caption.scss";
+@import "components/slick.scss";
+@import "components/hslider.scss";
+@import "components/sslider.scss";
+@import "components/footer.scss";
