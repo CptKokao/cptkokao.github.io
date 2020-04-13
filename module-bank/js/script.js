@@ -1191,7 +1191,7 @@ function init() {
       },
       options: {
         iconLayout: 'default#image',
-        iconImageHref: '../img/location.svg',
+        iconImageHref: './img/location.svg',
         iconImageSize: [30, 35],
         iconContent: 'RUS'
       }
@@ -1203,7 +1203,7 @@ function init() {
       },
       options: {
         iconLayout: 'default#image',
-        iconImageHref: '../img/location.svg',
+        iconImageHref: './img/location.svg',
         iconImageSize: [30, 35],
         iconContent: 'RUS'
       }
@@ -1215,7 +1215,7 @@ function init() {
       },
       options: {
         iconLayout: 'default#image',
-        iconImageHref: '../img/location.svg',
+        iconImageHref: './img/location.svg',
         iconImageSize: [30, 35],
         iconContent: 'RUS'
       }
