@@ -6,7 +6,7 @@
 		<meta name="description" content="Тестовое задание Selectel"/>
 		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 		<link rel="shortcut icon" type="image/png" href="./img/favicon.png"/>
-		<link rel="stylesheet" href="./css/style.css"/>
+		<link rel="stylesheet" href="/css/style.css"/>
 		<title>Тестовое задание Selectel</title>
 	</head>
 	<body>
@@ -32,20 +32,20 @@
 		<header class="wrapper">
 			<div class="header">
 				<div class="header__logo">
-					<div class="logo"><a href="https://selectel.ru/" target="_blank"><img src="./img/logo.svg" alt="Лого"/></a></div>
+					<div class="logo"><a href="https://selectel.ru/" rel="noopener" target="_blank"><img src="./img/logo.svg" alt="Лого"/></a></div>
 				</div>
 				<div class="header__nav">
 					<nav>
 						<ul>
-							<li><a href="https://t.me/Selectel" target="_blank"> 
+							<li><a href="https://t.me/Selectel" rel="noopener" target="_blank"> 
 									<svg width="22" height="12">
 										<use xlink:href="#icon-telegram"></use>
 									</svg><span>Написать в Telegram </span></a></li>
-							<li><a href="mailto:sales@selectel.ru" target="_blank">
+							<li><a href="mailto:sales@selectel.ru" rel="noopener" target="_blank">
 									<svg width="22" height="12">
 										<use xlink:href="#icon-mail"></use>
 									</svg><span>Написать в почту             </span></a></li>
-							<li><a class="link" href="tel:78005550675" target="_blank">
+							<li><a href="tel:78005550675" rel="noopener" target="_blank">
 									<svg width="22" height="12">
 										<use xlink:href="#icon-phone"></use>
 									</svg><span>+7 (800) 555-06-75</span></a></li>
@@ -59,7 +59,7 @@
 				<div class="hero">
 					<div class="hero__wrap">
 						<h1>Надежные серверы для проектов любой сложности</h1>
-						<p>Выделенный сервер — это аренда сервера под задачи вашего проекта с возможностью свободно распоряжаться ресурсами машины и установки любого программного обеспечения.</p><a class="btn hero__btn" href="https://selectel.ru/" target="_blank">Готовые серверы</a>
+						<p>Выделенный сервер — это аренда сервера под задачи вашего проекта с возможностью свободно распоряжаться ресурсами машины и установки любого программного обеспечения.</p><a class="btn hero__btn" href="https://selectel.ru/" rel="noopener" target="_blank">Готовые серверы</a>
 					</div>
 					<div class="hero__img">
 						<picture>
@@ -76,7 +76,8 @@
 					<div class="config__wrap">
 						<div class="config__range"><span class="config__range-name">vCPU</span>
 							<div class="config__range-wrap">
-								<input type="range" min="2" max="12" step="2" value="6" id="range"/><span class="config__range-value">6 ядер</span>
+								<input type="range" min="2" max="12" step="2" value="6" id="range"/>
+								<label class="hidden" for="range">Вябор количество ядер</label><span class="config__range-value">6 ядер</span>
 								<div class="config__range-span"><span>2</span><span>12</span></div>
 							</div>
 						</div>
@@ -105,23 +106,23 @@
 		<footer class="footer">
 			<div class="wrapper">
 				<div class="footer__wrap">
-					<div class="footer__logo"><a href="https://selectel.ru/" target="_blank">
+					<div class="footer__logo"><a href="https://selectel.ru/" rel="noopener" target="_blank">
 							<div class="logo"><img src="./img/logo.svg" alt="Лого"/></div></a>
 						<div class="footer__social">
 							<ul>
-								<li><a class="link" href="https://vk.com/selectel" target="_blank"><span class="hidden">Вконтакте</span>
+								<li><a class="link" href="https://vk.com/selectel" rel="noopener" target="_blank"><span class="hidden">Вконтакте</span>
 										<svg width="22" height="22">
 											<use xlink:href="#icon-vk"></use>
 										</svg></a></li>
-								<li><a class="link" href="https://twitter.com/selectel" title="Твиттер" target="_blank"><span class="hidden">Вконтакте</span>
+								<li><a class="link" href="https://twitter.com/selectel" title="Твиттер" rel="noopener" target="_blank"><span class="hidden">Вконтакте</span>
 										<svg width="22" height="22">
 											<use xlink:href="#icon-twitter"></use>
 										</svg></a></li>
-								<li><a class="link" href="https://www.facebook.com/selectel/" target="_blank"><span class="hidden">Фейсбук</span>
+								<li><a class="link" href="https://www.facebook.com/selectel/" rel="noopener" target="_blank"><span class="hidden">Фейсбук</span>
 										<svg width="22" height="22">
 											<use xlink:href="#icon-facebook"></use>
 										</svg></a></li>
-								<li><a class="link" href="https://www.instagram.com/selectel.ru/" target="_blank"><span class="hidden">Инстаграм</span>
+								<li><a class="link" href="https://www.instagram.com/selectel.ru/" rel="noopener" target="_blank"><span class="hidden">Инстаграм</span>
 										<svg width="22" height="22">
 											<use xlink:href="#icon-inst"></use>
 										</svg></a></li>
@@ -130,14 +131,14 @@
 					</div>
 					<nav class="footer__nav">
 						<ul>
-							<li><a class="link" href="https://selectel.ru/" target="_blank">Серверы</a></li>
-							<li><a class="link" href="https://selectel.ru/" target="_blank">Оборудование</a></li>
-							<li><a class="link" href="https://selectel.ru/" target="_blank">Дата-центры</a></li>
-							<li><a class="link" href="https://selectel.ru/" target="_blank">Блог</a></li>
-							<li><a class="link" href="https://selectel.ru/" target="_blank">Облако</a></li>
-							<li><a class="link" href="https://selectel.ru/" target="_blank">Решения </a></li>
-							<li><a class="link" href="https://selectel.ru/" target="_blank">О компании</a></li>
-							<li><a class="link" href="https://selectel.ru/" target="_blank">Офисы</a></li>
+							<li><a class="link" href="https://selectel.ru/" rel="noopener" target="_blank">Серверы</a></li>
+							<li><a class="link" href="https://selectel.ru/" rel="noopener" target="_blank">Оборудование</a></li>
+							<li><a class="link" href="https://selectel.ru/" rel="noopener" target="_blank">Дата-центры</a></li>
+							<li><a class="link" href="https://selectel.ru/" rel="noopener" target="_blank">Блог</a></li>
+							<li><a class="link" href="https://selectel.ru/" rel="noopener" target="_blank">Облако</a></li>
+							<li><a class="link" href="https://selectel.ru/" rel="noopener" target="_blank">Решения </a></li>
+							<li><a class="link" href="https://selectel.ru/" rel="noopener" target="_blank">О компании</a></li>
+							<li><a class="link" href="https://selectel.ru/" rel="noopener" target="_blank">Офисы</a></li>
 						</ul>
 					</nav>
 				</div>

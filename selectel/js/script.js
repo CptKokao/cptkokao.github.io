@@ -4065,10 +4065,15 @@ function render(data) {
     data.forEach(function (el) {
       var div = document.createElement('div');
       div.className = 'result__block';
-      div.innerHTML = "\n        <div class=\"result__item result__item--cpu\">\n          <p>".concat(el.name, "</p>\n          <span>").concat(el.cpu.name, ", ").concat(el.cpu.count * el.cpu.cores, " \u044F\u0434\u0435\u0440</span>\n        </div>\n        <div class=\"result__item\">\n          <p>").concat(el.ram, "</p>\n        </div>\n        <div class=\"result__item\">\n          <p>").concat(el.disk.count, " x ").concat(el.disk.value, " ").concat(el.disk.type, "</p>\n        </div>\n        <div class=\"result__item\">\n          <p>").concat(el.gpu ? el.gpu : '', "</p>\n        </div>\n        <div class=\"result__item result__item--price\">\n          <p>").concat((el.price / 100).toLocaleString(), " \u20BD/\u043C\u0435\u0441\u044F\u0446</p>\n          <button class=\"btn result__btn\">\u0417\u0430\u043A\u0430\u0437\u0430\u0442\u044C</button>\n        </div>\n        ");
+      div.innerHTML = "\n        <div class=\"result__item result__item--cpu\">\n          <p>".concat(el.name, "</p>\n          <span>").concat(el.cpu.name, ", ").concat(el.cpu.count * el.cpu.cores, " \u044F\u0434\u0435\u0440</span>\n        </div>\n        <div class=\"result__item\">\n          <p>").concat(el.ram, "</p>\n        </div>\n        <div class=\"result__item\">\n          <p>").concat(el.disk.count, " x ").concat(el.disk.value, " ").concat(el.disk.type, "</p>\n        </div>\n        <div class=\"result__item\">\n          <p>").concat(el.gpu ? el.gpu : '', "</p>\n        </div>\n        <div class=\"result__item result__item--price\">\n          <p>").concat(numberWithCommas(el.price / 100), " \u20BD/\u043C\u0435\u0441\u044F\u0446</p>\n          <button class=\"btn result__btn\">\u0417\u0430\u043A\u0430\u0437\u0430\u0442\u044C</button>\n        </div>\n        ");
       resultWrap.appendChild(div);
     });
   }
+} // Получает число с разделителем
+
+
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
 } // Склонение числительных
 
 
