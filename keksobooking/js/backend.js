@@ -21,11 +21,11 @@
       switch (xhr.status) {
         case HTTP_OK:
           // если upload
-          if (xhr.responseURL === 'https://js.dump.academy/keksobooking') {
+          if (xhr.responseURL === 'https://javascript.pages.academy/keksobooking/') {
             window.message.renderSuccessMessage();
           }
           // если download
-          if (xhr.responseURL === 'https://js.dump.academy/keksobooking/data') {
+          if (xhr.responseURL === 'https://javascript.pages.academy/keksobooking/data') {
             // записывает полученные данные
             window.backend.data = xhr.response;
             onSuccess(xhr.response);
@@ -68,7 +68,7 @@
   var download = function (onLoad, onError) {
     var xhr = setup(onLoad, onError);
 
-    xhr.open('GET', 'https://js.dump.academy/keksobooking/data');
+    xhr.open('GET', 'https://javascript.pages.academy/keksobooking/data');
     xhr.send();
   };
 
@@ -76,7 +76,7 @@
   var upload = function (downloadData, onLoad, onError) {
     var xhr = setup(onLoad, onError);
 
-    xhr.open('POST', 'https://js.dump.academy/keksobooking');
+    xhr.open('POST', 'https://javascript.pages.academy/keksobooking/');
     xhr.send(downloadData);
   };
 
