@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 74" width="11" height="74">
+	<defs>
+		<image width="1" height="74" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAABKAQMAAABARKxlAAAAAXNSR0IB2cksfwAAAANQTFRF////p8QbyAAAAAxJREFUeJxjYBh8AAAAlAAB1M/8OgAAAABJRU5ErkJggg=="/>
+		<image width="11" height="6" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAGCAMAAAAi7JTKAAAAAXNSR0IB2cksfwAAADlQTFRF////////////////////////////////////////////////////////////////////////////tBAeHgAAABN0Uk5TnTUANJxL6D5ASek3VDgv5Zonwzh5iNIAAAA4SURBVHicJcbJAYAgAMTANcoCihz2X6wi+WSkjdV+KDj+jA4iOX/MZ0JwuVB8M01tvVWWGc+YewEpKgFhHxHOrgAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Фигура 6 kопировать 38" href="#img1" x="5" y="0" />
+	<use id="Прямоугольник 16 kопировать 6" href="#img2" x="0" y="68" />
+</svg>
