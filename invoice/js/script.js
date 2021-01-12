@@ -5331,22 +5331,18 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 }(window, document);
 'use strict';
 
+var nav = document.querySelector('nav');
+var mouseImg = document.querySelector('.sl__mouse img');
 var hamburger = document.querySelector('.hamburger');
 var hamburgerLabel = document.querySelector('.hamburger-label');
-var nav = document.querySelector('nav');
-var mouseImg = document.querySelector('.sl__mouse img'); // Меню мобильной версии
+var imageL = document.querySelector('.parallax-l');
+var imageR = document.querySelectorAll('.parallax-r'); // Меню мобильной версии
 
 hamburger.addEventListener('click', function (e) {
   e.preventDefault();
   hamburger.classList.toggle('is-active');
   nav.style.opacity = nav.style.opacity === '1' ? '0' : '1';
   hamburgerLabel.style.opacity = hamburgerLabel.style.opacity === '0' ? '1' : '0';
-}); // Удаляет .wibro если был скролл
-
-window.addEventListener('scroll', function () {
-  if (mouseImg.classList.contains('wibro')) {
-    mouseImg.classList.remove('wibro');
-  }
 }); // Init слайдер
 
 var swiper = new Swiper('.swiper-container', {
@@ -5355,27 +5351,25 @@ var swiper = new Swiper('.swiper-container', {
     el: '.swiper-pagination',
     clickable: true
   }
+}); // Удаляет .wibro если был скролл
+
+window.addEventListener('scroll', function () {
+  if (mouseImg.classList.contains('wibro')) {
+    mouseImg.classList.remove('wibro');
+  }
 }); // SimpleParallax
 
-var mobileWidth = '768';
-var image = document.querySelector('.parallax-l');
-var instanceL = new simpleParallax(image, {
+var PrallaxL = new simpleParallax(imageL, {
   orientation: 'left',
   scale: 2.0,
   overflow: true,
   delay: 0
 });
-var image = document.querySelectorAll('.parallax-r');
-var instanceR = new simpleParallax(image, {
+var PrallaxR = new simpleParallax(imageR, {
   orientation: 'right',
   scale: 2.0,
   overflow: true
-}); // document.addEventListener('DOMContentLoaded', () => {
-//   if (document.documentElement.clientWidth < mobileWidth) {
-//     instanceL.destroy();
-//     instanceR.destroy();
-//   }
-// });
+}); // Примагничивание
 
 document.addEventListener('DOMContentLoaded', function () {
   var items = document.querySelectorAll('.work__item');
